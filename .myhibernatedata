@@ -1,0 +1,24 @@
+#MyEclipse Hibernate Properties
+#Mon Mar 10 15:52:58 CST 2014
+sessionFactoryName=org.idreambox.util.HibernateSessionFactory
+genBasicCompId=true
+profile=
+daoSFId=
+version=4.1
+jndiPath=
+detectM2M=true
+reStrategyClass=
+detectO2O=true
+springDaoFile=
+useJavaTypes=true
+keyGenerator=assigned
+libInstallFolder=/src/main/webapp/WEB-INF/lib
+addLibs2Project=true
+genVersionTag=true
+sessionFactoryId=
+basePersistenceClass=
+genAnnotations=true
+reSettingsFile=/iDreamBox0.0.1/hibernate.reveng.xml
+configFile=/iDreamBox0.0.1/src/main/java/hibernate.cfg.xml
+createConfigFile=true
+addLibs2Classpath=true

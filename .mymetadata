@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="iDreamBox0.0.7"
+  id="myeclipse.1389423340046"
+  context-root="/ROOT"
+  j2ee-spec="6.0"
+  archive="iDreamBox0.0.7.war">
+  <attributes>
+    <attribute name="webrootdir" value="src/main/webapp" />
+  </attributes>
+</project-module>
+

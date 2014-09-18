@@ -1,0 +1,146 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>关于Excel计算</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<script type="text/javascript">
+	var a;
+	var b;
+	var c;
+	var d;
+	var e;
+	var r;
+	var w;
+
+	function compute() {
+		var result = document.getElementById("result");
+
+		//清空result div
+		result.innerHTML = "";
+
+		var aaa = document.getElementById("aaa");
+		var bbb = document.getElementById("bbb");
+
+		a = aaa.value;
+		b = bbb.value;
+
+		if (a == '') {
+			result.innerHTML = "请输入a的值！";
+			aaa.focus();
+			return;
+		}
+		if (b == '') {
+			result.innerHTML = "请输入b的值！";
+			bbb.focus();
+			return;
+		}
+		if (isNaN(a)) {
+			result.innerHTML = "请确认a为数字！";
+			aaa.focus();
+			return;
+		}
+		if (isNaN(b)) {
+			result.innerHTML = "请确认b为数字！";
+			bbb.focus();
+			return;
+		}
+		
+		c = getC();
+		d = getD();
+
+		if(c >= 1)
+			w = getWbyC(c);
+		if(d >= 1)
+			w = getWbyD(d);
+		
+		if(w != "特殊！") {
+			e = getE(b,w);
+			r = getR(e);
+			
+			var str = "a=" + a +"<br/>";
+			str += "b=" + b +"<br/>";
+			str += "c=" + c +"<br/>";
+			str += "d=" + d +"<br/>";
+			str += "e=" + e +"<br/>";
+			str += "r=" + r +"<br/>";
+			str += "w=" + w +"<br/>";
+			
+			result.innerHTML = str;
+			
+		} else {
+			var str = "a=" + a +"<br/>";
+			str += "b=" + b +"<br/>";
+			str += "c=" + c +"<br/>";
+			str += "d=" + d +"<br/>";
+			str += "w=" + w +"<br/>";
+			
+			result.innerHTML = str;
+		}
+		
+	}
+
+	function getC() {
+		return a / b;
+	}
+
+	function getD() {
+		return b / a;
+	}
+
+	function getWbyC(c) {
+		if (1 <= c && c <= 1.3) {
+			return 4;
+		} else if (1.3 < c && c <= 1.6) {
+			return 4;
+		} else if (1.6 < c && c <= 2.3) {
+			return 6;
+		} else if (2.3 < c && c <= 3.3) {
+			return 6;
+		} else if (3.3 < c && c <= 4.3) {
+			return 6;
+		} else if (4.3 < c && c <= 5) {
+			return 4;
+		} else {
+			return "特殊！";
+		}
+	}
+	
+	function getWbyD(d) {
+		if (1 <= this.getD() && this.getD() <= 1.3) {
+			return 4;
+		} else if (1.3 < d && d <= 1.6) {
+			return 3.5;
+		} else if (1.6 < d && d <= 2.3) {
+			return 2.5;
+		} else if (2.3 < d && d <= 3.3) {
+			return 2.5;
+		} else if (3.3 < d && d <= 4.3) {
+			return 2;
+		} else if (4.3 < d && d <= 5) {
+			return 1.5;
+		} else {
+			return "特殊！";
+		}
+	}
+	
+	function getE(b,w) {
+		return (b * w) / 10;
+	}
+	
+	function getR(e) {
+		return 0.226 * e;
+	}
+</script>
+
+</head>
+
+<body>
+	<form action="" method="post">
+		a: <input type="text" id="aaa" size="20"> b:<input type="text" id="bbb" size="20"> <input type="button" value="计算" onclick="compute();">
+	</form>
+	<br />
+	<div id="result"></div>
+</body>
+
+</html>

@@ -1,0 +1,3 @@
+eclipse.preferences.version=1
+validator.Checked=src/main/webapp/WEB-INF/bootstrap/dist/js/bootstrap.js,src/main/webapp/WEB-INF/user/register/register.jsp,src/main/webapp/bootstrap,src/main/webapp/main/navbar.jsp,src/main/webapp/main/util/menu.jsp,src/main/webapp/test/TestCheckForm.jsp,src/main/webapp/main/main.jsp,src/main/webapp/base,src/main/webapp/WEB-INF/bootstrap/dist/js/bootstrap.min.js,src/main/webapp/user/register/reregister.jsp,src/main/webapp/user/login/login.jsp,src/main/webapp/user/register/register.jsp,src/main/webapp/main/util/navbar.jsp,target,src/main/webapp/main/common
+validator.Unchecked=

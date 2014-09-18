@@ -1,0 +1,212 @@
+/* Sticky footer styles
+-------------------------------------------------- */
+html,body {
+	height: 100%;
+	/* The html and body elements cannot have any padding or margin. */
+}
+
+/* Wrapper for page content to push down footer */
+#wrap {
+	min-height: 100%;
+	height: auto;
+	/* Negative indent footer by its height */
+	margin: 0 auto -60px;
+	/* Pad bottom by footer height */
+	padding: 0 0 60px;
+}
+
+/*
+ * Off Canvas
+ * --------------------------------------------------
+ */
+@media screen and (max-width: 767px) {
+	.row-offcanvas {
+		position: relative;
+		-webkit-transition: all 0.25s ease-out;
+		-moz-transition: all 0.25s ease-out;
+		transition: all 0.25s ease-out;
+	}
+	.row-offcanvas-right
+  .sidebar-offcanvas {
+		right: -50%; /* 6 columns */
+	}
+	.row-offcanvas-left
+  .sidebar-offcanvas {
+		left: -50%; /* 6 columns */
+	}
+	.row-offcanvas-right.active {
+		right: 50%; /* 6 columns */
+	}
+	.row-offcanvas-left.active {
+		left: 50%; /* 6 columns */
+	}
+	.sidebar-offcanvas {
+		position: absolute;
+		top: 0;
+		width: 50%; /* 6 columns */
+	}
+}
+
+/* Set the fixed height of the footer here */
+#footer {
+	height: 60px;
+	background-color: #f5f5f5;
+}
+
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+#wrap>.container {
+	padding: 60px 15px 0;
+}
+
+.container .text-muted {
+	margin: 20px 0;
+}
+
+#footer>.container {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+code {
+	font-size: 80%;
+}
+
+.list-group a {
+	padding-left: 70px;;
+	font-size: 15px;
+}
+
+.img-ico {
+	dispaly: inline;
+	*zoom: 1;
+	background: url('/main/dist/images/btn_icon.gif?t=201402260053?@=-1') no-repeat;
+}
+
+.list-group-item span,.img-ico {
+	float: left;
+}
+
+.list-group-item .img-ico {
+	width: 23px;
+	height: 22px;
+	position: absolute;
+	left: 35px;
+	top: 9px;
+	margin: 0
+}
+
+.aside-disk,.aside-disk:link,.aside-disk:visited {
+	background-position: -205px -0px
+}
+
+a:hover .aside-disk,a:active .aside-disk {
+	background-position: -228px -0px
+}
+
+.on .aside-disk,.on:link .aside-disk,.on:link .aside-disk,.on:hover .aside-disk,.on:active .aside-disk {
+	background-position: -228px -0px
+}
+
+.close .aside-disk {
+	background-position: -1px -40px
+}
+
+.close a:hover .aside-disk,.open a:active .aside-disk,.close .on .aside-disk {
+	background-position: -1px -60px
+}
+
+.aside-mpic {
+	background-position: -205px -21px;
+}
+
+.aside-mpic {
+	background-position: -205px -21px;
+}
+
+a:hover .aside-mpic,a:active .aside-mpic {
+	background-position: -228px -21px;
+}
+
+.on .aside-mpic,.on:link .aside-mpic,.on:link .aside-mpic,.on:hover .aside-mpic,.on:active .aside-mpic {
+	background-position: -228px -21px;
+}
+
+.aside-mdoc {
+	background-position: -205px -44px
+}
+
+a:hover .aside-mdoc,a:active .aside-mdoc {
+	background-position: -228px -44px
+}
+
+.on .aside-mdoc,.on:link .aside-mdoc,.on:link .aside-mdoc,.on:hover .aside-mdoc,.on:active .aside-mdoc {
+	background-position: -228px -44px
+}
+
+.aside-mvideo {
+	background-position: -205px -89px
+}
+
+a:hover .aside-mvideo,a:active .aside-mvideo {
+	background-position: -228px -89px
+}
+
+.on .aside-mvideo,.on:link .aside-mvideo,.on:link .aside-mvideo,.on:hover .aside-mvideo,.on:active .aside-mvideo {
+	background-position: -228px -89px
+}
+
+.aside-mbt {
+	background-position: -252px 0
+}
+
+a:hover .aside-mbt,a:active .aside-mbt {
+	background-position: -275px 0
+}
+
+.on .aside-mbt,.on:link .aside-mbt,.on:link .aside-mbt,.on:hover .aside-mbt,.on:active .aside-mbt {
+	background-position: -275px 0
+}
+
+.aside-mmusic {
+	background-position: -205px -66px
+}
+
+a:hover .aside-mmusic,a:active .aside-mmusic {
+	background-position: -228px -66px
+}
+
+.on .aside-mmusic,.on:link .aside-mmusic,.on:link .aside-mmusic,.on:hover .aside-mmusic,.on:active .aside-mmusic {
+	background-position: -228px -66px
+}
+
+.aside-moth {
+	background-position: -205px -177px
+}
+
+a:hover .aside-moth,a:active .aside-moth {
+	background-position: -228px -177px
+}
+
+.on .aside-moth,.on:link .aside-moth,.on:link .aside-moth,.on:hover .aside-moth,.on:active .aside-moth {
+	background-position: -228px -177px
+}
+
+.aside-recycle {
+	background-position: -206px -151px
+}
+
+a:hover .aside-recycle,a:active .aside-recycle {
+	background-position: -229px -151px
+}
+
+.on .aside-recycle,.on:link .aside-recycle,.on:link .aside-recycle,.on:hover .aside-recycle,.on:active .aside-recycle {
+	background-position: -229px -151px
+}
+
+/*********************************************************************/
+.btn-group {
+	padding-top: 7px;
+	margin-left: 8px;
+}
